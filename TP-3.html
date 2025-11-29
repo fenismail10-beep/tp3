@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CV — Adil Ben Cheikh</title>
+  <style>
+    :root{
+      --accent:#0b6efd;
+      --muted:#666;
+      --bg:#f7f9fc;
+      --card:#fff;
+      font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      background:var(--bg);
+      color:#222;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:24px;
+    }
+    .container{
+      max-width:900px;
+      margin:0 auto;
+      background:var(--card);
+      box-shadow:0 6px 24px rgba(15,23,42,0.08);
+      display:grid;
+      grid-template-columns: 260px 1fr;
+      gap:24px;
+      padding:28px;
+      border-radius:10px;
+    }
+
+    /* Left column */
+    .aside{
+      background:linear-gradient(180deg, #fff, #fbfdff);
+      padding:20px;
+      border-radius:8px;
+      border:1px solid #eef3ff;
+      height:fit-content;
+    }
+    .photo{
+      width:100%;
+      height:140px;
+      background:linear-gradient(135deg,var(--accent),#5bc0eb);
+      border-radius:8px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      color:#fff;
+      font-size:22px;
+      font-weight:700;
+      letter-spacing:0.6px;
+      margin-bottom:14px;
+    }
+    .contact-list{font-size:14px;color:var(--muted);}
+    .contact-item{margin:8px 0;}
+    .section-title{
+      font-size:13px;
+      font-weight:700;
+      color:var(--accent);
+      margin-top:18px;
+      margin-bottom:8px;
+      text-transform:uppercase;
+      letter-spacing:0.9px;
+    }
+    .small{
+      font-size:13px;color:var(--muted);
+    }
+
+    /* Main column */
+    .main{padding:6px 4px;}
+    h1{
+      margin:0;
+      font-size:26px;
+      letter-spacing:0.4px;
+    }
+    h2{margin:6px 0 6px 0;font-size:18px;color:var(--accent)}
+    .meta{color:var(--muted);margin-bottom:12px;}
+    .card{
+      background:#fff;
+      border-radius:8px;
+      padding:14px 16px;
+      border:1px solid #f0f2f8;
+      margin-bottom:12px;
+    }
+    ul{padding-left:18px;margin:6px 0}
+    .skill-list{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{
+      background:#f1f6ff;color:var(--accent);padding:6px 10px;border-radius:999px;font-size:13px;border:1px solid rgba(11,110,253,0.08)
+    }
+
+    /* Print-friendly */
+    @media print{
+      body{padding:0;background:white}
+      .container{box-shadow:none;max-width:100%;grid-template-columns:260px 1fr}
+    }
+
+    /* Responsive */
+    @media (max-width:760px){
+      .container{grid-template-columns:1fr; padding:18px;}
+      .photo{height:110px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container" role="document">
+    <aside class="aside" aria-label="Informations personnelles">
+      <div class="photo" aria-hidden="true">Adil B. Cheikh</div>
+
+      <div>
+        <div class="section-title">Contact</div>
+        <div class="contact-list">
+          <div class="contact-item"><strong>Email :</strong> <a href="mailto:adilbencheikh6@gmail.com">adilbencheikh6@gmail.com</a></div>
+          <div class="contact-item"><strong>Téléphone :</strong> 0627645620</div>
+          <div class="contact-item"><strong>Âge :</strong> 20 ans</div>
+        </div>
+
+        <div class="section-title">Langues</div>
+        <div class="small">
+          <div>Arabe — langue maternelle</div>
+          <div>Français — niveau moyen</div>
+          <div>Anglais — niveau moyen</div>
+        </div>
+
+        <div class="section-title">Formation</div>
+        <div class="small">
+          <div><strong>Faculté Polydisciplinaire Ouarzazate</strong></div>
+          <div>Département Mathématiques et Informatique — Filière Cybersécurité</div>
+          <div style="margin-top:8px"><strong>Baccalauréat</strong>, option Sciences Physiques — mention Passable<br>Promotion 2023‑2024</div>
+        </div>
+
+        <div class="section-title">Compétences (synthèse)</div>
+        <div class="skill-list">
+          <div class="skill">Notions en cybersécurité</div>
+          <div class="skill">Algorithmique</div>
+          <div class="skill">Mathématiques</div>
+          <div class="skill">Outils informatiques</div>
+        </div>
+      </div>
+    </aside>
+
+    <main class="main" aria-label="Contenu principal">
+      <header>
+        <h1>Adil Ben Cheikh</h1>
+        <div class="meta">Étudiant en Cybersécurité — Département Mathématiques et Informatique, Faculté Polydisciplinaire Ouarzazate</div>
+      </header>
+
+      <section class="card" aria-labelledby="profil-title">
+        <h2 id="profil-title">Profil</h2>
+        <p class="small">Je suis étudiant en cybersécurité à la Faculté Polydisciplinaire d'Ouarzazate. Sérieux et motivé, je souhaite développer mes compétences techniques et pratiques dans la sécurité des systèmes et des réseaux, ainsi que dans la programmation liée à la sécurité informatique.</p>
+      </section>
+
+      <section class="card" aria-labelledby="education-title">
+        <h2 id="education-title">Formation</h2>
+        <ul>
+          <li>
+            <strong>Faculté Polydisciplinaire Ouarzazate</strong><br/>
+            Département Mathématiques et Informatique — Filière Cybersécurité<br/>
+            Cursus en cours
+          </li>
+          <li style="margin-top:8px">
+            <strong>Baccalauréat — Sciences Physiques</strong><br/>
+            Mention : Passable — Promotion 2023-2024
+          </li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="experience-title">
+        <h2 id="experience-title">Expériences / Projets</h2>
+        <p class="small">En tant qu'étudiant, je participe à des projets universitaires et à des travaux pratiques portant sur l'algorithmique, les réseaux et les bases de la cybersécurité. (Détails disponibles sur demande.)</p>
+      </section>
+
+      <section class="card" aria-labelledby="competences-title">
+        <h2 id="competences-title">Compétences techniques</h2>
+        <ul>
+          <li>Notions de sécurité des systèmes et des réseaux</li>
+          <li>Algorithmique et logique mathématique</li>
+          <li>Environnement GNU/Linux et outils de base</li>
+          <li>Capacité d'analyse et résolution de problèmes</li>
+        </ul>
+      </section>
+
+      <section class="card" aria-labelledby="interets-title">
+        <h2 id="interets-title">Centres d'intérêt</h2>
+        <p class="small">Cybersécurité, programmation, mathématiques appliquées et apprentissage continu des technologies de l'information.</p>
+      </section>
+
+      <footer style="margin-top:6px" class="small">
+        Références disponibles sur demande — CV généré pour Adil Ben Cheikh.
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
